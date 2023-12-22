@@ -68,3 +68,10 @@ for(int i=0;i<newSize;i++){
     }
 }
 return copyArray;
+// function to print array
+void printArray(int*copyArray,intnewSize){
+    for(inti=0;i<newSize;i++){
+        ptintf("%d",copyArray[i]);
+    }
+    printf("\n");
+}
