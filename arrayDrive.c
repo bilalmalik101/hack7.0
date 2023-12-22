@@ -28,6 +28,13 @@ int oldSize=6;
     printarray(copyArray,newSize);
   }
   int arr3[]{10,15,5,25,0};
-  
+  printarray(arr3,5);
+  reverse(arr3,5);
+  printarray(arr3,5);
+  printarray(arr,8);
+  int*reverseCpyAry=reversecopy(arr,8);
+  if(reverseCpyAry !=NULL){
+    printfarray(reverseCpyAry,8);
+  }
 
 }
