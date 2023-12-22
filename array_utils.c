@@ -4,7 +4,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-int cont(const * arr,int size,int x){
+int cont(const*arr,int size,int x){
     if(size<=0){
         printf("invalid input\n");
         return 0;
@@ -40,15 +40,31 @@ else{
         }
     }
     if(check==1){
-        return\ 1;
+        return 1;
     }
     else{
         return 0;
     }
 }
-
+//make dynamic array
 int * paddedCopy(const int *arr, int oldSize, int newSize){
-    if(arr==NULL||oldsize<=0||newsize<=0){
+    if(arr==NULL||oldSize <=0|| newSize<=0){
         printf("Invalide Input to function...\n");
         return NULL;}
 }
+int*copyArray=(int*)malloc(newSize * sizeof(int));
+if(copyArray==NULL){
+    printf("memory allocation ");
+    return NULL;
+
+}
+//loop for run and chheck condition
+for(int i=0;i<newSize;i++){
+    if(i<oldSize){
+        copyArray[i]=arr[i];
+
+    }else{
+        copyArray[i]=0;
+    }
+}
+return copyArray;
